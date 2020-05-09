@@ -1,0 +1,308 @@
+[05-May-2020 17:04:55 Etc/GMT] An Error occurred while handling another error:
+exception 'yii\base\InvalidArgumentException' with message 'The file or directory to be published does not exist: /home/kusdemos/public_html/crm/backend/adminlte' in /home/kusdemos/public_html/crm/vendor/yiisoft/yii2/web/AssetManager.php:455
+Stack trace:
+#0 /home/kusdemos/public_html/crm/vendor/yiisoft/yii2/web/AssetBundle.php(185): yii\web\AssetManager->publish('/home/kusdemos/...', Array)
+#1 /home/kusdemos/public_html/crm/vendor/yiisoft/yii2/web/AssetManager.php(266): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 /home/kusdemos/public_html/crm/vendor/yiisoft/yii2/web/AssetManager.php(237): yii\web\AssetManager->loadBundle('backend\\assets\\...', Array, true)
+#3 /home/kusdemos/public_html/crm/vendor/yiisoft/yii2/web/View.php(287): yii\web\AssetManager->getBundle('backend\\assets\\...')
+#4 /home/kusdemos/public_html/crm/vendor/yiisoft/yii2/web/AssetBundle.php(125): yii\web\View->registerAssetBundle('backend\\assets\\...')
+#5 /home/kusdemos/public_html/crm/backend/themes/adminlte/layouts/main.php(8): yii\web\AssetBundle::register(Object(yii\web\View))
+#6 /home/kusdemos/public_html/crm/vendor/yiisoft/yii2/base/View.php(348): require('/home/kusdemos/...')
+#7 /home/kusdemos/public_html/crm/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/home/kusdemos/...', Array)
+#8 /home/kusdemos/public_html/crm/vendor/yiisoft/yii2/base/Controller.php(401): yii\base\View->renderFile('/home/kusdemos/...', Array, Object(backend\controllers\SiteController))
+#9 /home/kusdemos/public_html/crm/vendor/yiisoft/yii2/base/Controller.php(387): yii\base\Controller->renderContent('<div class="sit...')
+#10 /home/kusdemos/public_html/crm/vendor/yiisoft/yii2/web/ErrorAction.php(139): yii\base\Controller->render('error', Array)
+#11 /home/kusdemos/public_html/crm/vendor/yiisoft/yii2/web/ErrorAction.php(118): yii\web\ErrorAction->renderHtmlResponse()
+#12 [internal function]: yii\web\ErrorAction->run()
+#13 /home/kusdemos/public_html/crm/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#14 /home/kusdemos/public_html/crm/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\Action->runWithParams(Array)
+#15 /home/kusdemos/public_html/crm/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#16 /home/kusdemos/public_html/crm/vendor/yiisoft/yii2/web/ErrorHandler.php(109): yii\base\Module->runAction('site/error')
+#17 /home/kusdemos/public_html/crm/vendor/yiisoft/yii2/base/ErrorHandler.php(123): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#18 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#19 {main}
+Previous exception:
+exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "css/site-login.css".' in /home/kusdemos/public_html/crm/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /home/kusdemos/public_html/crm/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('css/site-login....', Array)
+#1 /home/kusdemos/public_html/crm/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/kusdemos/public_html/crm/backend/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /home/kusdemos/public_html/crm/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /home/kusdemos/public_html/crm/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/kusdemos/public_html/crm/backend/index.php(17): yii\base\Application->run()
+#2 {main}
+$_SERVER = [
+    'CONTEXT_DOCUMENT_ROOT' => '/home/kusdemos/public_html',
+    'CONTEXT_PREFIX' => '',
+    'DOCUMENT_ROOT' => '/home/kusdemos/public_html',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'HTTP_ACCEPT' => 'text/css,*/*;q=0.1',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'HTTP_COOKIE' => '_identity-manage=ea42e3e7aceb24d0bc27bcd3ecb15041c71be5660e7e31d4f4fc674f5279b40fa%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22_identity-manage%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%229YTRoQRffSfEEjCEVHXPQ5lZQEEh0lJk%22%2C2592000%5D%22%3B%7D; timezone=Asia/Kolkata; cpsession=kusdemos%3ajEe3GuCgdgYjbW7P%2cf98cab8c51e55401f56ffbfa7bdf71db; advanced-backend=sh694do9a6vrgdr8cnvthd0pt5; _csrf-backend=c7309708018dfdfbbfc8ee3b664b9937fa5b987c4ebb4af9849046a84cf77263a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22AXhXykNu4Q2z-fxJAde9tsrZibDqTF2Z%22%3B%7D',
+    'HTTP_HOST' => 'kusdemos.com',
+    'HTTP_REFERER' => 'http://kusdemos.com/crm/backend/site/login',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.129 Safari/537.36',
+    'PATH' => '/bin:/usr/bin',
+    'PHP_INI_SCAN_DIR' => '/opt/cloudlinux/alt-php56/root/etc:/opt/cloudlinux/alt-php56/root/etc/php.d:.',
+    'QUERY_STRING' => '',
+    'REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'XrGctzMR1xOWNPbmCELt3AAAAAE',
+    'REDIRECT_URL' => '/crm/backend/css/site-login.css',
+    'REMOTE_ADDR' => '47.15.168.250',
+    'REMOTE_PORT' => '59381',
+    'REQUEST_METHOD' => 'GET',
+    'REQUEST_SCHEME' => 'http',
+    'REQUEST_URI' => '/crm/backend/css/site-login.css',
+    'SCRIPT_FILENAME' => '/home/kusdemos/public_html/crm/backend/index.php',
+    'SCRIPT_NAME' => '/crm/backend/index.php',
+    'SERVER_ADDR' => '199.79.63.203',
+    'SERVER_ADMIN' => 'webmaster@kusdemos.com',
+    'SERVER_NAME' => 'kusdemos.com',
+    'SERVER_PORT' => '80',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache/2.4.39 (cPanel) OpenSSL/1.0.2r mod_bwlimited/1.4 Phusion_Passenger/5.3.7',
+    'UNIQUE_ID' => 'XrGctzMR1xOWNPbmCELt3AAAAAE',
+    'PHP_SELF' => '/crm/backend/index.php',
+    'REQUEST_TIME_FLOAT' => 1588698295.7672710418701171875,
+    'REQUEST_TIME' => 1588698295,
+]
+[05-May-2020 17:05:17 Etc/GMT] PHP Parse error:  syntax error, unexpected 'const' (T_CONST), expecting variable (T_VARIABLE) in /home/kusdemos/public_html/crm/backend/models/AdminUser.php on line 24
+[05-May-2020 17:06:49 Etc/GMT] An Error occurred while handling another error:
+exception 'yii\base\InvalidArgumentException' with message 'The file or directory to be published does not exist: /home/kusdemos/public_html/crm/backend/adminlte' in /home/kusdemos/public_html/crm/vendor/yiisoft/yii2/web/AssetManager.php:455
+Stack trace:
+#0 /home/kusdemos/public_html/crm/vendor/yiisoft/yii2/web/AssetBundle.php(185): yii\web\AssetManager->publish('/home/kusdemos/...', Array)
+#1 /home/kusdemos/public_html/crm/vendor/yiisoft/yii2/web/AssetManager.php(266): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 /home/kusdemos/public_html/crm/vendor/yiisoft/yii2/web/AssetManager.php(237): yii\web\AssetManager->loadBundle('backend\\assets\\...', Array, true)
+#3 /home/kusdemos/public_html/crm/vendor/yiisoft/yii2/web/View.php(287): yii\web\AssetManager->getBundle('backend\\assets\\...')
+#4 /home/kusdemos/public_html/crm/vendor/yiisoft/yii2/web/AssetBundle.php(125): yii\web\View->registerAssetBundle('backend\\assets\\...')
+#5 /home/kusdemos/public_html/crm/backend/themes/adminlte/layouts/main.php(8): yii\web\AssetBundle::register(Object(yii\web\View))
+#6 /home/kusdemos/public_html/crm/vendor/yiisoft/yii2/base/View.php(348): require('/home/kusdemos/...')
+#7 /home/kusdemos/public_html/crm/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/home/kusdemos/...', Array)
+#8 /home/kusdemos/public_html/crm/vendor/yiisoft/yii2/base/Controller.php(401): yii\base\View->renderFile('/home/kusdemos/...', Array, Object(backend\controllers\SiteController))
+#9 /home/kusdemos/public_html/crm/vendor/yiisoft/yii2/base/Controller.php(387): yii\base\Controller->renderContent('<div class="sit...')
+#10 /home/kusdemos/public_html/crm/vendor/yiisoft/yii2/web/ErrorAction.php(139): yii\base\Controller->render('error', Array)
+#11 /home/kusdemos/public_html/crm/vendor/yiisoft/yii2/web/ErrorAction.php(118): yii\web\ErrorAction->renderHtmlResponse()
+#12 [internal function]: yii\web\ErrorAction->run()
+#13 /home/kusdemos/public_html/crm/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#14 /home/kusdemos/public_html/crm/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\Action->runWithParams(Array)
+#15 /home/kusdemos/public_html/crm/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#16 /home/kusdemos/public_html/crm/vendor/yiisoft/yii2/web/ErrorHandler.php(109): yii\base\Module->runAction('site/error')
+#17 /home/kusdemos/public_html/crm/vendor/yiisoft/yii2/base/ErrorHandler.php(123): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#18 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#19 {main}
+Previous exception:
+exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "css/site-login.css".' in /home/kusdemos/public_html/crm/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /home/kusdemos/public_html/crm/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('css/site-login....', Array)
+#1 /home/kusdemos/public_html/crm/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/kusdemos/public_html/crm/backend/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /home/kusdemos/public_html/crm/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /home/kusdemos/public_html/crm/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/kusdemos/public_html/crm/backend/index.php(17): yii\base\Application->run()
+#2 {main}
+$_SERVER = [
+    'CONTEXT_DOCUMENT_ROOT' => '/home/kusdemos/public_html',
+    'CONTEXT_PREFIX' => '',
+    'DOCUMENT_ROOT' => '/home/kusdemos/public_html',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'HTTP_ACCEPT' => 'text/css,*/*;q=0.1',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'HTTP_COOKIE' => '_identity-manage=ea42e3e7aceb24d0bc27bcd3ecb15041c71be5660e7e31d4f4fc674f5279b40fa%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22_identity-manage%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%229YTRoQRffSfEEjCEVHXPQ5lZQEEh0lJk%22%2C2592000%5D%22%3B%7D; timezone=Asia/Kolkata; cpsession=kusdemos%3ajEe3GuCgdgYjbW7P%2cf98cab8c51e55401f56ffbfa7bdf71db; advanced-backend=sh694do9a6vrgdr8cnvthd0pt5; _csrf-backend=c7309708018dfdfbbfc8ee3b664b9937fa5b987c4ebb4af9849046a84cf77263a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22AXhXykNu4Q2z-fxJAde9tsrZibDqTF2Z%22%3B%7D',
+    'HTTP_HOST' => 'kusdemos.com',
+    'HTTP_REFERER' => 'http://kusdemos.com/crm/backend/site/login',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.129 Safari/537.36',
+    'PATH' => '/bin:/usr/bin',
+    'PHP_INI_SCAN_DIR' => '/opt/cloudlinux/alt-php56/root/etc:/opt/cloudlinux/alt-php56/root/etc/php.d:.',
+    'QUERY_STRING' => '',
+    'REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'XrGdKGhggQypG1FSucKjZgAAAm4',
+    'REDIRECT_URL' => '/crm/backend/css/site-login.css',
+    'REMOTE_ADDR' => '47.15.168.250',
+    'REMOTE_PORT' => '59430',
+    'REQUEST_METHOD' => 'GET',
+    'REQUEST_SCHEME' => 'http',
+    'REQUEST_URI' => '/crm/backend/css/site-login.css',
+    'SCRIPT_FILENAME' => '/home/kusdemos/public_html/crm/backend/index.php',
+    'SCRIPT_NAME' => '/crm/backend/index.php',
+    'SERVER_ADDR' => '199.79.63.203',
+    'SERVER_ADMIN' => 'webmaster@kusdemos.com',
+    'SERVER_NAME' => 'kusdemos.com',
+    'SERVER_PORT' => '80',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache/2.4.39 (cPanel) OpenSSL/1.0.2r mod_bwlimited/1.4 Phusion_Passenger/5.3.7',
+    'UNIQUE_ID' => 'XrGdKGhggQypG1FSucKjZgAAAm4',
+    'PHP_SELF' => '/crm/backend/index.php',
+    'REQUEST_TIME_FLOAT' => 1588698408.950067996978759765625,
+    'REQUEST_TIME' => 1588698408,
+]
+[05-May-2020 17:07:06 Etc/GMT] PHP Parse error:  syntax error, unexpected 'const' (T_CONST), expecting variable (T_VARIABLE) in /home/kusdemos/public_html/crm/backend/models/AdminUser.php on line 24
+[05-May-2020 17:07:34 Etc/GMT] An Error occurred while handling another error:
+exception 'yii\base\InvalidArgumentException' with message 'The file or directory to be published does not exist: /home/kusdemos/public_html/crm/backend/adminlte' in /home/kusdemos/public_html/crm/vendor/yiisoft/yii2/web/AssetManager.php:455
+Stack trace:
+#0 /home/kusdemos/public_html/crm/vendor/yiisoft/yii2/web/AssetBundle.php(185): yii\web\AssetManager->publish('/home/kusdemos/...', Array)
+#1 /home/kusdemos/public_html/crm/vendor/yiisoft/yii2/web/AssetManager.php(266): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 /home/kusdemos/public_html/crm/vendor/yiisoft/yii2/web/AssetManager.php(237): yii\web\AssetManager->loadBundle('backend\\assets\\...', Array, true)
+#3 /home/kusdemos/public_html/crm/vendor/yiisoft/yii2/web/View.php(287): yii\web\AssetManager->getBundle('backend\\assets\\...')
+#4 /home/kusdemos/public_html/crm/vendor/yiisoft/yii2/web/AssetBundle.php(125): yii\web\View->registerAssetBundle('backend\\assets\\...')
+#5 /home/kusdemos/public_html/crm/backend/themes/adminlte/layouts/main.php(8): yii\web\AssetBundle::register(Object(yii\web\View))
+#6 /home/kusdemos/public_html/crm/vendor/yiisoft/yii2/base/View.php(348): require('/home/kusdemos/...')
+#7 /home/kusdemos/public_html/crm/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/home/kusdemos/...', Array)
+#8 /home/kusdemos/public_html/crm/vendor/yiisoft/yii2/base/Controller.php(401): yii\base\View->renderFile('/home/kusdemos/...', Array, Object(backend\controllers\SiteController))
+#9 /home/kusdemos/public_html/crm/vendor/yiisoft/yii2/base/Controller.php(387): yii\base\Controller->renderContent('<div class="sit...')
+#10 /home/kusdemos/public_html/crm/vendor/yiisoft/yii2/web/ErrorAction.php(139): yii\base\Controller->render('error', Array)
+#11 /home/kusdemos/public_html/crm/vendor/yiisoft/yii2/web/ErrorAction.php(118): yii\web\ErrorAction->renderHtmlResponse()
+#12 [internal function]: yii\web\ErrorAction->run()
+#13 /home/kusdemos/public_html/crm/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#14 /home/kusdemos/public_html/crm/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\Action->runWithParams(Array)
+#15 /home/kusdemos/public_html/crm/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#16 /home/kusdemos/public_html/crm/vendor/yiisoft/yii2/web/ErrorHandler.php(109): yii\base\Module->runAction('site/error')
+#17 /home/kusdemos/public_html/crm/vendor/yiisoft/yii2/base/ErrorHandler.php(123): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#18 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#19 {main}
+Previous exception:
+exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "css/site-login.css".' in /home/kusdemos/public_html/crm/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /home/kusdemos/public_html/crm/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('css/site-login....', Array)
+#1 /home/kusdemos/public_html/crm/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/kusdemos/public_html/crm/backend/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /home/kusdemos/public_html/crm/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /home/kusdemos/public_html/crm/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/kusdemos/public_html/crm/backend/index.php(17): yii\base\Application->run()
+#2 {main}
+$_SERVER = [
+    'CONTEXT_DOCUMENT_ROOT' => '/home/kusdemos/public_html',
+    'CONTEXT_PREFIX' => '',
+    'DOCUMENT_ROOT' => '/home/kusdemos/public_html',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'HTTP_ACCEPT' => 'text/css,*/*;q=0.1',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'HTTP_COOKIE' => '_identity-manage=ea42e3e7aceb24d0bc27bcd3ecb15041c71be5660e7e31d4f4fc674f5279b40fa%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22_identity-manage%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%229YTRoQRffSfEEjCEVHXPQ5lZQEEh0lJk%22%2C2592000%5D%22%3B%7D; timezone=Asia/Kolkata; cpsession=kusdemos%3ajEe3GuCgdgYjbW7P%2cf98cab8c51e55401f56ffbfa7bdf71db; advanced-backend=sh694do9a6vrgdr8cnvthd0pt5; _csrf-backend=c7309708018dfdfbbfc8ee3b664b9937fa5b987c4ebb4af9849046a84cf77263a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22AXhXykNu4Q2z-fxJAde9tsrZibDqTF2Z%22%3B%7D',
+    'HTTP_HOST' => 'kusdemos.com',
+    'HTTP_REFERER' => 'http://kusdemos.com/crm/backend/site/login',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.129 Safari/537.36',
+    'PATH' => '/bin:/usr/bin',
+    'PHP_INI_SCAN_DIR' => '/opt/cloudlinux/alt-php56/root/etc:/opt/cloudlinux/alt-php56/root/etc/php.d:.',
+    'QUERY_STRING' => '',
+    'REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'XrGdVt@UP0tpNjk8us5@BwAAAJM',
+    'REDIRECT_URL' => '/crm/backend/css/site-login.css',
+    'REMOTE_ADDR' => '47.15.168.250',
+    'REMOTE_PORT' => '59457',
+    'REQUEST_METHOD' => 'GET',
+    'REQUEST_SCHEME' => 'http',
+    'REQUEST_URI' => '/crm/backend/css/site-login.css',
+    'SCRIPT_FILENAME' => '/home/kusdemos/public_html/crm/backend/index.php',
+    'SCRIPT_NAME' => '/crm/backend/index.php',
+    'SERVER_ADDR' => '199.79.63.203',
+    'SERVER_ADMIN' => 'webmaster@kusdemos.com',
+    'SERVER_NAME' => 'kusdemos.com',
+    'SERVER_PORT' => '80',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache/2.4.39 (cPanel) OpenSSL/1.0.2r mod_bwlimited/1.4 Phusion_Passenger/5.3.7',
+    'UNIQUE_ID' => 'XrGdVt@UP0tpNjk8us5@BwAAAJM',
+    'PHP_SELF' => '/crm/backend/index.php',
+    'REQUEST_TIME_FLOAT' => 1588698454.3980998992919921875,
+    'REQUEST_TIME' => 1588698454,
+]
+[05-May-2020 17:07:41 Etc/GMT] An Error occurred while handling another error:
+exception 'yii\base\InvalidArgumentException' with message 'The file or directory to be published does not exist: /home/kusdemos/public_html/crm/backend/adminlte' in /home/kusdemos/public_html/crm/vendor/yiisoft/yii2/web/AssetManager.php:455
+Stack trace:
+#0 /home/kusdemos/public_html/crm/vendor/yiisoft/yii2/web/AssetBundle.php(185): yii\web\AssetManager->publish('/home/kusdemos/...', Array)
+#1 /home/kusdemos/public_html/crm/vendor/yiisoft/yii2/web/AssetManager.php(266): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 /home/kusdemos/public_html/crm/vendor/yiisoft/yii2/web/AssetManager.php(237): yii\web\AssetManager->loadBundle('backend\\assets\\...', Array, true)
+#3 /home/kusdemos/public_html/crm/vendor/yiisoft/yii2/web/View.php(287): yii\web\AssetManager->getBundle('backend\\assets\\...')
+#4 /home/kusdemos/public_html/crm/vendor/yiisoft/yii2/web/AssetBundle.php(125): yii\web\View->registerAssetBundle('backend\\assets\\...')
+#5 /home/kusdemos/public_html/crm/backend/themes/adminlte/layouts/main.php(8): yii\web\AssetBundle::register(Object(yii\web\View))
+#6 /home/kusdemos/public_html/crm/vendor/yiisoft/yii2/base/View.php(348): require('/home/kusdemos/...')
+#7 /home/kusdemos/public_html/crm/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/home/kusdemos/...', Array)
+#8 /home/kusdemos/public_html/crm/vendor/yiisoft/yii2/base/Controller.php(401): yii\base\View->renderFile('/home/kusdemos/...', Array, Object(backend\controllers\SiteController))
+#9 /home/kusdemos/public_html/crm/vendor/yiisoft/yii2/base/Controller.php(387): yii\base\Controller->renderContent('<div class="sit...')
+#10 /home/kusdemos/public_html/crm/vendor/yiisoft/yii2/web/ErrorAction.php(139): yii\base\Controller->render('error', Array)
+#11 /home/kusdemos/public_html/crm/vendor/yiisoft/yii2/web/ErrorAction.php(118): yii\web\ErrorAction->renderHtmlResponse()
+#12 [internal function]: yii\web\ErrorAction->run()
+#13 /home/kusdemos/public_html/crm/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#14 /home/kusdemos/public_html/crm/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\Action->runWithParams(Array)
+#15 /home/kusdemos/public_html/crm/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#16 /home/kusdemos/public_html/crm/vendor/yiisoft/yii2/web/ErrorHandler.php(109): yii\base\Module->runAction('site/error')
+#17 /home/kusdemos/public_html/crm/vendor/yiisoft/yii2/base/ErrorHandler.php(123): yii\web\ErrorHandler->renderException(Object(yii\web\NotFoundHttpException))
+#18 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\NotFoundHttpException))
+#19 {main}
+Previous exception:
+exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "css/site-login.css".' in /home/kusdemos/public_html/crm/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /home/kusdemos/public_html/crm/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('css/site-login....', Array)
+#1 /home/kusdemos/public_html/crm/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/kusdemos/public_html/crm/backend/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /home/kusdemos/public_html/crm/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /home/kusdemos/public_html/crm/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/kusdemos/public_html/crm/backend/index.php(17): yii\base\Application->run()
+#2 {main}
+$_SERVER = [
+    'CONTEXT_DOCUMENT_ROOT' => '/home/kusdemos/public_html',
+    'CONTEXT_PREFIX' => '',
+    'DOCUMENT_ROOT' => '/home/kusdemos/public_html',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'HTTP_ACCEPT' => 'text/css,*/*;q=0.1',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'HTTP_COOKIE' => '_identity-manage=ea42e3e7aceb24d0bc27bcd3ecb15041c71be5660e7e31d4f4fc674f5279b40fa%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22_identity-manage%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%229YTRoQRffSfEEjCEVHXPQ5lZQEEh0lJk%22%2C2592000%5D%22%3B%7D; timezone=Asia/Kolkata; cpsession=kusdemos%3ajEe3GuCgdgYjbW7P%2cf98cab8c51e55401f56ffbfa7bdf71db; advanced-backend=sh694do9a6vrgdr8cnvthd0pt5; _csrf-backend=c7309708018dfdfbbfc8ee3b664b9937fa5b987c4ebb4af9849046a84cf77263a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22AXhXykNu4Q2z-fxJAde9tsrZibDqTF2Z%22%3B%7D',
+    'HTTP_HOST' => 'kusdemos.com',
+    'HTTP_REFERER' => 'http://kusdemos.com/crm/backend/site/login',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.129 Safari/537.36',
+    'PATH' => '/bin:/usr/bin',
+    'PHP_INI_SCAN_DIR' => '/opt/cloudlinux/alt-php56/root/etc:/opt/cloudlinux/alt-php56/root/etc/php.d:.',
+    'QUERY_STRING' => '',
+    'REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'XrGdXWhggQypG1FSucKkmgAAAlk',
+    'REDIRECT_URL' => '/crm/backend/css/site-login.css',
+    'REMOTE_ADDR' => '47.15.168.250',
+    'REMOTE_PORT' => '59464',
+    'REQUEST_METHOD' => 'GET',
+    'REQUEST_SCHEME' => 'http',
+    'REQUEST_URI' => '/crm/backend/css/site-login.css',
+    'SCRIPT_FILENAME' => '/home/kusdemos/public_html/crm/backend/index.php',
+    'SCRIPT_NAME' => '/crm/backend/index.php',
+    'SERVER_ADDR' => '199.79.63.203',
+    'SERVER_ADMIN' => 'webmaster@kusdemos.com',
+    'SERVER_NAME' => 'kusdemos.com',
+    'SERVER_PORT' => '80',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache/2.4.39 (cPanel) OpenSSL/1.0.2r mod_bwlimited/1.4 Phusion_Passenger/5.3.7',
+    'UNIQUE_ID' => 'XrGdXWhggQypG1FSucKkmgAAAlk',
+    'PHP_SELF' => '/crm/backend/index.php',
+    'REQUEST_TIME_FLOAT' => 1588698461.534883975982666015625,
+    'REQUEST_TIME' => 1588698461,
+]
+[05-May-2020 17:22:14 Etc/GMT] PHP Parse error:  syntax error, unexpected 'const' (T_CONST), expecting variable (T_VARIABLE) in /home/kusdemos/public_html/crm/backend/models/AdminUser.php on line 24
+[05-May-2020 17:23:08 Etc/GMT] PHP Parse error:  syntax error, unexpected 'const' (T_CONST), expecting variable (T_VARIABLE) in /home/kusdemos/public_html/crm/backend/models/AdminUser.php on line 24
+[05-May-2020 17:48:51 Etc/GMT] PHP Parse error:  syntax error, unexpected 'const' (T_CONST), expecting variable (T_VARIABLE) in /home/kusdemos/public_html/crm/backend/models/Product.php on line 31
+[05-May-2020 18:03:52 Etc/GMT] PHP Parse error:  syntax error, unexpected 'const' (T_CONST), expecting variable (T_VARIABLE) in /home/kusdemos/public_html/crm/backend/models/Blog.php on line 31
+[05-May-2020 18:05:22 Etc/GMT] PHP Parse error:  syntax error, unexpected 'const' (T_CONST), expecting variable (T_VARIABLE) in /home/kusdemos/public_html/crm/backend/models/Slider.php on line 27
+[06-May-2020 08:06:21 Etc/GMT] PHP Fatal error:  Undefined class constant 'TYPE' in /home/kusdemos/public_html/crm/backend/models/Product.php on line 111
+[06-May-2020 08:15:35 Etc/GMT] PHP Fatal error:  Undefined class constant 'TYPE' in /home/kusdemos/public_html/crm/backend/models/Slider.php on line 152
+[07-May-2020 05:38:10 Etc/GMT] PHP Fatal error:  Undefined class constant 'TYPE' in /home/kusdemos/public_html/crm/backend/models/Product.php on line 111
+[07-May-2020 06:47:17 Etc/GMT] PHP Fatal error:  Undefined class constant 'TYPE' in /home/kusdemos/public_html/crm/backend/models/Product.php on line 165
+[07-May-2020 07:10:28 Etc/GMT] PHP Fatal error:  Undefined class constant 'TYPE' in /home/kusdemos/public_html/crm/backend/models/Blog.php on line 183

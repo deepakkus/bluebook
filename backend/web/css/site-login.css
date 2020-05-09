@@ -1,0 +1,30 @@
+html, body {
+    height: 100%;
+}
+.main {
+    height: 100%;
+    width: 100%;
+    display: table;
+}
+.wrapper {
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle;
+}
+    
+.login {
+    margin: 0px 384px auto;
+    box-shadow: 12px 11px 13px rgba(0,0,0,0.3);
+    background-color: #fff;
+    border-radius: 9px;
+}
+.inner-log-in {
+    margin: 10px 9px 10px 9px;
+    height: 400px;
+}
+body{
+    background: linear-gradient(to right, #ff5f6d , #ffc371);
+}
+h3,p{
+    font-family: 'Montserrat', sans-serif;
+}
