@@ -35,14 +35,14 @@ $this->params['breadcrumbs'][] = $this->title;
 			<div class="small-box bg-green">
 				<div class="inner">
 				<h3 id="total_brands"></h3>
-				<p>Total Brands</p>
+				<p>Total News</p>
 				</div>
 				<div class="icon">
 				<i class="ion ion-stats-bars"></i>
 				<i class="fa fa-sun-o" aria-hidden="true"></i>
 
 				</div>
-				<a href="<?php echo Yii::$app->request->baseUrl."/brands/index";?>" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+				<a href="<?php echo Yii::$app->request->baseUrl."/news/index";?>" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
 			</div>
 		</div>
 		<!-- ./col -->
@@ -59,7 +59,7 @@ $this->params['breadcrumbs'][] = $this->title;
 				<i class="fa fa-book" aria-hidden="true"></i>
 
 				</div>
-				<a href="<?php echo Yii::$app->request->baseUrl."/pages/index";?>" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+				<a href="<?php echo Yii::$app->request->baseUrl."/page/index";?>" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
 			</div>
 		</div>
 		<!-- ./col -->
@@ -74,7 +74,7 @@ $this->params['breadcrumbs'][] = $this->title;
 				<div class="icon">
 				<i class="ion ion-pie-graph"></i>
 				</div>
-				<a href="<?php echo Yii::$app->request->baseUrl."/categories/index";?>" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+				<a href="<?php echo Yii::$app->request->baseUrl."/category/index";?>" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
 			</div>
 		</div>
 		<!-- ./col -->
@@ -84,7 +84,7 @@ $this->params['breadcrumbs'][] = $this->title;
 		<div class="col-sm-6">
 			<div class="box box-primary">
 				<div class="box-header with-border">
-					<h3 class="box-title">Recently Uploded Adds</h3>
+					<h3 class="box-title">Recently Uploded News</h3>
 					<div class="box-tools pull-right">
 						<button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
 						</button>
@@ -95,25 +95,11 @@ $this->params['breadcrumbs'][] = $this->title;
 				<div class="box-body">
 					<ul class="products-list product-list-in-box">
 
-						<?php foreach( $get_lestest_adds as $add ) : ?>
-							<li class="item">
-								<div class="product-img">
-									<img src="<?= $add['image'] ?>" alt="Product Image" width="50px" height="50px">
-								</div>
-								<div class="product-info">
-									<a href="<?= $add['update_url'] ?>" class="product-title"><?= $add['title'] ?>
-									<span class="label label-<?= $add['price_color'] ?> pull-right">$<?= $add['price'] ?></span></a>
-									<span class="product-description"><?= $add['desp'] ?></span>
-								</div>
-							</li>
-							<hr>
-						<?php endforeach ?>
-
 					</ul>
 				</div>
 				<!-- /.box-body -->
 				<div class="box-footer text-center">
-					<a href="<?= Url::to(['add/index']) ?>" class="uppercase">View All Adds</a>
+					<a href="<?= Url::to(['add/index']) ?>" class="uppercase">View All News</a>
 				</div>
 				<!-- /.box-footer -->
 			</div>
@@ -136,13 +122,7 @@ $this->params['breadcrumbs'][] = $this->title;
 				<!-- /.box-header -->
 				<div class="box-body no-padding">
 					<ul class="users-list clearfix">
-						<?php foreach( $current_joined_user as $user ) : ?>
-						<li>
-							<img src="<?= $user['user_image'] ?>" alt="User Image" width="67px" height="62px">
-							<a class="users-list-name" href="<?= $user['detail_view_url'] ?>"><?= $user['name'] ?></a>
-							<span class="users-list-date"><?= $user['join_date'] ?></span>
-						</li>
-						<?php endforeach ?>
+						
 					</ul>
 					<!-- /.users-list -->
 				</div>
@@ -171,15 +151,6 @@ $this->params['breadcrumbs'][] = $this->title;
 								<th style="width: 40px">Count</th>
 							</tr>
 
-							<?php foreach( $get_rank_user_posts as $post ) : ?>
-							
-								<tr>
-									<td><?= $post['counter'] ?></td>
-									<td><?= $post['user_full_name'] ?></td>
-									<td><span class="badge bg-red"><?= $post['post_count'] ?></span></td>
-								</tr>
-								
-							<?php endforeach ?>
 						</tbody>
 					</table>
 				</div>
@@ -191,39 +162,9 @@ $this->params['breadcrumbs'][] = $this->title;
 		</div>
 	</div>
 
-	<h2 class="page-header">Most Viewed Add</h2>
+	<h2 class="page-header">Most Viewed News</h2>
 
 	<div class="row">
-
-		<?php foreach( $get_most_viewed_adds as $add ) : ?>
-
-			<div class="col-md-4">
-				<!-- Widget: user widget style 1 -->
-				<div class="box box-widget widget-user-2">
-					<!-- Add the bg color to the header using any of the bg-* classes -->
-					<div class="widget-user-header bg-<?= $add['bg_color'] ?>">
-						<div class="widget-user-image">
-							<img class="img-circle" src="<?= $add['image'] ?>" alt="User Avatar">
-						</div>
-
-						<a href="<?= $add['update_url'] ?>">
-							<h3 class="widget-user-username" style="color: #fff"><?= $add['title'] ?></h3>
-						</a>
-
-						<h5 class="widget-user-desc"><?= $add['desp'] ?></h5>
-					</div>
-					<div class="box-footer no-padding">
-						<ul class="nav nav-stacked">
-							<li><a href="#">Total Views <span class="pull-right badge bg-blue"><?= $add['total_view'] ?></span></a></li>
-							<hr>	
-							<li><a href="#">Category <span class="pull-right badge bg-aqua"><?= $add['category'] ?></span></a></li>
-							<li><a href="#">Brands <span class="pull-right badge bg-green"><?= $add['brands'] ?></span></a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-
-		<?php endforeach ?>
 
       </div>
 

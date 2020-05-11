@@ -61,7 +61,7 @@ if(!empty($changepassword))
                     [
                         'label' => 'Dashboard',
                         'icon' => 'fa fa-tachometer icon-2x',
-                        'url' => ['site/index'],
+                        'url' => ['dashboard/index'],
                         'items' => [
                                  
                         ]
